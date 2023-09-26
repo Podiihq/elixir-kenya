@@ -1,3 +1,22 @@
+/* @fontface {
+  font-family: 'Roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap')
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+  
