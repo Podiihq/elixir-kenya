@@ -1,5 +1,11 @@
+import NavigationBar from "../components/NavigationBar";
+
 function Landing() {
-  return <div>Landing</div>;
+  return (
+    <>
+      <NavigationBar />
+    </>
+  );
 }
 
 export default Landing;
