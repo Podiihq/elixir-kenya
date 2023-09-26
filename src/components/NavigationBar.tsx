@@ -1,6 +1,6 @@
 function NavigationBar() {
   return (
-    <div className="bg-black">
+    <div className="bg-black z-50 fixed w-full">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="flex justify-between items-center">
           <a
