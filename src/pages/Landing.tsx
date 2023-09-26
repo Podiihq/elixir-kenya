@@ -3,11 +3,13 @@ import HeroImage from "../assets/images/hero-final.png";
 import Hero2 from "../assets/images/sub-hero-1.png";
 import Hero3 from "../assets/images/sub-hero-2.png";
 import Hero4 from "../assets/images/sub-hero-4.png";
+import Hero1 from "../assets/images/sub-hero-3.png";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 import "../App.css";
 import Cards from "../components/Cards";
 import CardsAlternate from "../components/CardsAlternate";
+import ExpandImages from "../components/ExpandImages";
 
 function Landing() {
   const { scrollYProgress } = useScroll();
@@ -147,6 +149,25 @@ function Landing() {
                 className="rounded-xl border-gray-100 border-2"
               />
             </div>
+          </div>
+        </section>
+        <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-32">
+          <div>
+            <div>
+              <h3 className="text-9xl font-black uppercase">
+                Our <br></br>Past Events.
+              </h3>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+          <div className="grid grid-cols-5">
+            <ExpandImages image={Hero3} />
+            <ExpandImages image={Hero2} />
+            <ExpandImages image={Hero4} />
+            <ExpandImages image={HeroImage} />
+            <ExpandImages image={Hero1} />
           </div>
         </section>
       </div>
