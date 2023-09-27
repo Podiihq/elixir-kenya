@@ -21,7 +21,7 @@ function Landing() {
   return (
     <>
       <motion.div
-        className="fixed inset-0 h-4 bg-gray-600 origin-[0%] z-50"
+        className="fixed inset-0 h-4 bg-gradient-to-r from-[#796612] to-red-600 bg-gray-600 origin-[0%] z-50"
         style={{ scaleX }}
       />
       <NavigationBar />
@@ -154,20 +154,29 @@ function Landing() {
         <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-32">
           <div>
             <div>
-              <h3 className="text-9xl font-black uppercase">
+              <h3 className="text-5xl lg:text-9xl font-black uppercase text-center lg:text-left">
                 Our <br></br>Past Events.
               </h3>
             </div>
           </div>
         </section>
 
-        <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-          <div className="grid grid-cols-5">
+        <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
+          <div className="grid lg:grid-cols-5 grid-cols-2">
             <ExpandImages image={Hero3} />
             <ExpandImages image={Hero2} />
             <ExpandImages image={Hero4} />
             <ExpandImages image={HeroImage} />
             <ExpandImages image={Hero1} />
+          </div>
+        </section>
+
+        <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
+          <div className="bg-[#131313] p-6 lg:p-12 rounded-xl shadow-lg">
+            <div className="text-5xl lg:text-[5.2rem] leading-none font-black text-center">
+              🎨 Unlock Your Creative Potential at Design Conference 2023!
+            </div>
+            <div></div>
           </div>
         </section>
       </div>
