@@ -11,6 +11,7 @@ import "../App.css";
 import Cards from "../components/Cards";
 import CardsAlternate from "../components/CardsAlternate";
 import ExpandImages from "../components/ExpandImages";
+import BlogCards from "../components/BlogCards";
 
 function Landing() {
   const { scrollYProgress } = useScroll();
@@ -155,7 +156,7 @@ function Landing() {
         <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-32">
           <div>
             <div>
-              <h3 className="text-5xl lg:text-9xl font-black uppercase text-center lg:text-left">
+              <h3 className="text-5xl lg:text-9xl uppercase text-center lg:text-left">
                 Our <br></br>Past Events.
               </h3>
             </div>
@@ -174,7 +175,7 @@ function Landing() {
 
         <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
           <div className="bg-[#131313] p-6 lg:p-12 rounded-xl shadow-lg">
-            <div className="text-5xl lg:text-[5.2rem] leading-none font-black text-center">
+            <div className="text-5xl lg:text-[5.2rem] leading-none font-bold lg:font-black text-center">
               🎨 Unlock Your Creative Potential at Design Conference 2023!
             </div>
           </div>
@@ -185,6 +186,31 @@ function Landing() {
                 Conference 2023
               </p>
             </Marquee>
+          </div>
+        </section>
+
+        <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
+          <div>
+            <div>
+              <h3 className="text-9xl">Our Blogs</h3>
+            </div>
+            <div className="grid lg:grid-cols-3 mt-8 gap-10">
+              <BlogCards
+                images={Hero1}
+                heading={"Principles of interractive design"}
+                date={"19 July, 2023"}
+              />
+              <BlogCards
+                images={Hero2}
+                heading={"Introduction to UX/UI"}
+                date={"23 December, 2020"}
+              />
+              <BlogCards
+                images={Hero3}
+                heading={"Design for developers"}
+                date={"05 May, 2022"}
+              />
+            </div>
           </div>
         </section>
       </div>
