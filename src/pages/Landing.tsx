@@ -5,6 +5,7 @@ import Hero3 from "../assets/images/sub-hero-2.png";
 import Hero4 from "../assets/images/sub-hero-4.png";
 import Hero1 from "../assets/images/sub-hero-3.png";
 import { motion, useScroll, useSpring } from "framer-motion";
+import Marquee from "react-fast-marquee";
 
 import "../App.css";
 import Cards from "../components/Cards";
@@ -176,7 +177,14 @@ function Landing() {
             <div className="text-5xl lg:text-[5.2rem] leading-none font-black text-center">
               🎨 Unlock Your Creative Potential at Design Conference 2023!
             </div>
-            <div></div>
+          </div>
+          <div className="text-center bg-orange-400 py-4 rounded-b-xl">
+            <Marquee className="overflow-hidden">
+              <p className="text-4xl">
+                - Design Conference 2023 - Design Conference 2023 - Design
+                Conference 2023
+              </p>
+            </Marquee>
           </div>
         </section>
       </div>
