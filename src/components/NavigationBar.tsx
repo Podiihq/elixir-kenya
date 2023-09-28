@@ -14,7 +14,7 @@ function NavigationBar() {
             className="mr-4 lg:mr-0 no-wrap py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-gray-900"
           >
             {" "}
-            Login Now 🌟
+            RSVP Now 🌟
           </motion.a>
           <div className="text-white hidden lg:block">
             <a href="#" className="text-lg my-4">
@@ -30,7 +30,7 @@ function NavigationBar() {
             className="no-wrap py-3 px-6 bg-white hover:bg-gray-200"
           >
             {" "}
-            Register Now 🔥
+            Get Tickets 🔥
           </motion.a>
         </div>
       </div>
