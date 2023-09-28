@@ -36,7 +36,7 @@ function Landing() {
             viewport={{ once: true }}
             src={HeroImage}
             alt=""
-            className="object-cover w-full relative"
+            className="object-cover w-full relative h-96 lg:h-auto"
           />
         </div>
         <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
