@@ -11,7 +11,7 @@ function ExpandImages(props: ExpandImageProps) {
         initial={{ width: 200, height: 400, flexGrow: 0 }}
         whileHover={{
           scale: 1.2,
-          width: 700,
+          width: 4000,
         }}
         src={props.image}
         alt=""

@@ -12,6 +12,7 @@ import Cards from "../components/Cards";
 import CardsAlternate from "../components/CardsAlternate";
 import ExpandImages from "../components/ExpandImages";
 import BlogCards from "../components/BlogCards";
+import { Footer } from "../components/Footer";
 
 function Landing() {
   const { scrollYProgress } = useScroll();
@@ -164,12 +165,13 @@ function Landing() {
         </section>
 
         <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
-          <div className="grid lg:grid-cols-5 grid-cols-2">
+          <div className="grid lg:grid-cols-6 gap-4 grid-cols-2">
             <ExpandImages image={Hero3} />
             <ExpandImages image={Hero2} />
             <ExpandImages image={Hero4} />
             <ExpandImages image={HeroImage} />
             <ExpandImages image={Hero1} />
+            <ExpandImages image={HeroImage} />
           </div>
         </section>
 
@@ -212,6 +214,9 @@ function Landing() {
               />
             </div>
           </div>
+        </section>
+        <section>
+          <Footer />
         </section>
       </div>
     </>
