@@ -115,7 +115,7 @@ function Landing() {
         <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
           <div className="grid lg:grid-cols-2 gap-4 lg:gap-24 items-center">
             <div>
-              <p className="text-5xl lg:text-8xl font-black uppercase leading-none text-center lg:text-left">
+              <p className="text-5xl lg:text-8xl font-black leading-none text-center lg:text-left">
                 Explore,<br></br> Create & <br></br>Connect
               </p>
               <p className="py-4 lg:py-8 text-xl text-center lg:text-left">
@@ -227,7 +227,7 @@ function Landing() {
 
         <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
           <div className="bg-[#131313] p-6 lg:p-12 rounded-xl shadow-lg">
-            <p className="text-center pb-8 uppercase">Upcoming Events</p>
+            <p className="text-center pb-8 uppercase">Upcoming Event</p>
             <div className="text-5xl lg:text-[5.2rem] leading-none font-bold lg:font-black text-center">
               🤯Get ready to put your coding hats at{" "}
               <span className="text-purple-500">ElixirConf Africa 2024 !</span>
