@@ -8,7 +8,9 @@ import UlrichPic from "../assets/images/speakers/peter-ullrich.jpeg";
 import RajPic from "../assets/images/speakers/raj-rajhans.png";
 import Session1 from "../assets/images/sessions/ulrich.png";
 import Session2 from "../assets/images/sessions/beam.png";
+import Session3 from "../assets/images/sessions/tracey.jpeg";
 import TraceyPic from "../assets/images/speakers/tracey.jpeg";
+import NjokiPic from "../assets/images/speakers/njoki.jpeg";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Marquee from "react-fast-marquee";
 
@@ -69,7 +71,7 @@ function Landing() {
                 scale: 1.1,
                 boxShadow: "0px 0px 8px rgba(255,255,255)",
               }}
-              href=""
+              href="https://t.me/elixirkenya"
               className="lg:text-2xl py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-gray-900"
             >
               {" "}
@@ -93,24 +95,6 @@ function Landing() {
               "Get ready to put your coding hats on because the Monday meetups are back and better than ever! Starting from April 17th, we'll be diving deep into the world of Phoenix liveview and building a real-life chat app project together!"
             }
           />
-          <div className="text-center py-8">
-            <p className="text-3xl">
-              Join our community to get updates about our meetups.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <motion.a
-              whileHover={{
-                scale: 1.1,
-                boxShadow: "0px 0px 8px rgba(255,255,255)",
-              }}
-              href=""
-              className="lg:text-2xl py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-gray-900"
-            >
-              {" "}
-              Join us today
-            </motion.a>
-          </div>
         </section>
         <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
           <div className="grid lg:grid-cols-2 gap-4 lg:gap-24 items-center">
@@ -143,7 +127,7 @@ function Landing() {
                     scale: 1.1,
                     boxShadow: "0px 0px 8px rgba(255,255,255)",
                   }}
-                  href=""
+                  href="https://t.me/elixirkenya"
                   className="lg:text-2xl py-3 px-6 border text-white bg-gradient-to-r from-[#796612] to-red-600"
                 >
                   Our Community 😃
@@ -176,7 +160,8 @@ function Landing() {
             <div>
               <div>
                 <p className="text-5xl lg:text-8xl font-bold">
-                  What our speakers have to say,
+                  What our <span className="text-purple-500"> speakers </span>{" "}
+                  have to say,
                 </p>
               </div>
               <div className="grid lg:grid-cols-2 mt-16 gap-10">
@@ -195,18 +180,18 @@ function Landing() {
                   name={"Tracey Onim"}
                 />
                 <Testimonials
+                  image={NjokiPic}
+                  description={
+                    "“I had a great experience presenting the topic - Building Your MVP with Elixir -  to the Elixir Kenya community. The engagement and enthusiasm from the audience of Elixir enthusiasts were truly inspiring.”"
+                  }
+                  name={"Njoki Kiarie"}
+                />
+                <Testimonials
                   image={RajPic}
                   description={
                     "“The thoughtful questions and lively discussions that followed my presentation were a testament to the vibrant and passionate community you have cultivated”"
                   }
                   name={"Raj Rajhans"}
-                />
-                <Testimonials
-                  image={TraceyPic}
-                  description={
-                    "“I had a great experience presenting the topic - Building Your MVP with Elixir -  to the Elixir Kenya community. The engagement and enthusiasm from the audience of Elixir enthusiasts were truly inspiring.”"
-                  }
-                  name={"Njoki Kiarie"}
                 />
               </div>
               <div className="pt-16 flex justify-center">
@@ -216,9 +201,9 @@ function Landing() {
                     boxShadow: "0px 0px 8px rgba(255,255,255)",
                   }}
                   href=""
-                  className="lg:text-2xl py-3 px-6 border text-white bg-gradient-to-r from-[#3d2a44] to-[#610781]"
+                  className="lg:text-2xl py-3 px-6 border text-purple-500 bg-gray-100 font-semibold"
                 >
-                  Become Speaker
+                  Become Speaker 🎙️
                 </motion.a>
               </div>
             </div>
@@ -238,7 +223,7 @@ function Landing() {
                   scale: 1.1,
                   boxShadow: "0px 0px 8px rgba(255,255,255)",
                 }}
-                href=""
+                href="https://elixirconf.africa/"
                 className="lg:text-2xl py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-gray-900"
               >
                 {" "}
@@ -267,20 +252,32 @@ function Landing() {
             </div>
             <div className="grid lg:grid-cols-3 mt-8 gap-10">
               <BlogCards
-                images={Session2}
-                heading={"Beam: The perfect fit for Networks"}
-                date={"06 October, 2023"}
-              />
-              <BlogCards
                 images={Session1}
-                heading={"Monolith vs Microservices"}
+                heading={"Monolith vs Microservices."}
                 date={"24 February, 2023"}
               />
               <BlogCards
-                images={Hero3}
-                heading={"Design for developers"}
-                date={"05 May, 2022"}
+                images={Session3}
+                heading={"Handling external requests in elixir."}
+                date={"25 August, 2022"}
               />
+              <BlogCards
+                images={Session2}
+                heading={"Beam: The perfect fit for networks."}
+                date={"06 October, 2023"}
+              />
+            </div>
+            <div className="pt-10 lg:pt-32 flex justify-center">
+              <motion.a
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 8px rgba(255,255,255)",
+                }}
+                href=""
+                className="lg:text-2xl py-3 px-6 border text-white bg-purple-600"
+              >
+                Explore All Videos 🛩️
+              </motion.a>
             </div>
           </div>
         </section>

@@ -10,9 +10,9 @@ function Cards(props: CardProps) {
       <div>
         <img src={props.images} alt="" className="w-full h-full object-cover" />
       </div>
-      <div className="text-center py-20">
+      <div className="px-12 py-20">
         <h3 className="text-5xl lg:text-7xl font-bold">{props.heading}</h3>
-        <p className="mt-8 px-12">{props.description}</p>
+        <p className="mt-8">{props.description}</p>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ function NavigationBar() {
               scale: 1.1,
               boxShadow: "0px 0px 8px rgba(255,255,255)",
             }}
-            href="#"
+            href="https://t.me/elixirkenya"
             className="no-wrap py-3 px-6 bg-purple-500 text-white hover:text-black hover:bg-gray-200"
           >
             {" "}
