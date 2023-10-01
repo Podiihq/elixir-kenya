@@ -40,9 +40,9 @@ function Landing() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            src={HeroImage}
+            src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
             alt=""
-            className="object-cover w-full relative h-96 lg:h-auto"
+            className="object-cover w-full relative h-96"
           />
         </div>
         <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -152,7 +152,7 @@ function Landing() {
             </div>
             <div className="mt-4">
               <img
-                src={Hero4}
+                src="https://images.unsplash.com/photo-1574786199573-a22c93a95aaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2077&q=80"
                 alt=""
                 className="rounded-xl border-gray-100 border-2"
               />
@@ -161,7 +161,7 @@ function Landing() {
         </section>
 
         <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
-          <div className="grid lg:grid-cols-6 gap-4 grid-cols-2">
+          <div className="grid lg:grid-cols-6 lg:gap-4 grid-cols-2">
             <ExpandImages image={Hero3} />
             <ExpandImages image={Hero2} />
             <ExpandImages image={Hero4} />
@@ -209,6 +209,18 @@ function Landing() {
                   name={"Njoki Kiarie"}
                 />
               </div>
+              <div className="pt-16 flex justify-center">
+                <motion.a
+                  whileHover={{
+                    scale: 1.1,
+                    boxShadow: "0px 0px 8px rgba(255,255,255)",
+                  }}
+                  href=""
+                  className="lg:text-2xl py-3 px-6 border text-white bg-gradient-to-r from-[#3d2a44] to-[#610781]"
+                >
+                  Become Speaker
+                </motion.a>
+              </div>
             </div>
           </div>
         </section>
@@ -249,7 +261,9 @@ function Landing() {
         <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
           <div>
             <div>
-              <h3 className="text-5xl lg:text-9xl">Watch our Webinars</h3>
+              <h3 className="text-5xl lg:text-8xl font-bold">
+                Watch our <br></br>Webinars
+              </h3>
             </div>
             <div className="grid lg:grid-cols-3 mt-8 gap-10">
               <BlogCards

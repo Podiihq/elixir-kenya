@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import LogoIcon from "../assets/images/logo/logo-icon.png";
+import LogoIcon from "../assets/images/logo/logo.png";
 
 function NavigationBar() {
   return (
     <div className="bg-black w-full">
-      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="flex justify-between items-center ">
           <a href="#">
-            <img src={LogoIcon} alt="" className="w-10" />
+            <img src={LogoIcon} alt="" className="w-24" />
           </a>
           <motion.a
             whileHover={{

@@ -15,7 +15,7 @@ function ExpandImages(props: ExpandImageProps) {
         }}
         src={props.image}
         alt=""
-        className="object-cover rounded-xl"
+        className="object-cover lg:rounded-xl"
       />
     </div>
   );
