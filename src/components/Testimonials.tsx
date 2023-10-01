@@ -15,15 +15,15 @@ function Testimonials(props: TestimonialProps) {
       }}
       className="relative rounded"
     >
-      <div className="flex gap-10 border border-[#333333] rounded p-8 items-center bg-[#131313]">
+      <div className="lg:flex gap-6 border border-[#333333] rounded p-8 items-center bg-[#131313]">
         <div>
-          <p className="text-lg">{props.description}</p>
+          <p className="lg:text-lg">{props.description}</p>
           <p className="pt-10 text-gray-500">{props.name}</p>
         </div>
         <img
           src={props.image}
           alt=""
-          className="object-cover w-52 h-72 rounded"
+          className="object-cover w-full lg:w-52 h-72 rounded"
         />
       </div>
       <div className="p-4 absolute -top-10 left-5 rounded-full text-6xl">

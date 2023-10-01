@@ -46,13 +46,6 @@ function Landing() {
           />
         </div>
         <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-          <div className="flex justify-between gap-4 text-center text-sm">
-            <p className="lg:text-2xl uppercase">January 8 - 9</p>
-            <p className="lg:text-2xl uppercase">Live & Virtual</p>
-            <p className="lg:text-2xl uppercase">
-              Mega Cinema, Mega Mall, Kisumu
-            </p>
-          </div>
           <motion.h1
             initial={{ x: "-100vw" }}
             animate={{ x: 0, type: "spring" }}
@@ -166,15 +159,6 @@ function Landing() {
             </div>
           </div>
         </section>
-        <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-32">
-          <div>
-            <div>
-              <h3 className="text-5xl lg:text-9xl text-center lg:text-left">
-                Our <br></br>Past Speakers.
-              </h3>
-            </div>
-          </div>
-        </section>
 
         <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
           <div className="grid lg:grid-cols-6 gap-4 grid-cols-2">
@@ -191,11 +175,11 @@ function Landing() {
           <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
             <div>
               <div>
-                <p className="text-8xl font-bold">
+                <p className="text-5xl lg:text-8xl font-bold">
                   What our speakers have to say,
                 </p>
               </div>
-              <div className="grid grid-cols-2 mt-16 gap-10">
+              <div className="grid lg:grid-cols-2 mt-16 gap-10">
                 <Testimonials
                   image={UlrichPic}
                   description={
@@ -209,6 +193,20 @@ function Landing() {
                     "“I loved that I could schedule time with the organizer a day before the event to plan and prepare for the event together. This helped me to calm down and know how the itinerary would be.”"
                   }
                   name={"Tracey Onim"}
+                />
+                <Testimonials
+                  image={RajPic}
+                  description={
+                    "“The thoughtful questions and lively discussions that followed my presentation were a testament to the vibrant and passionate community you have cultivated”"
+                  }
+                  name={"Raj Rajhans"}
+                />
+                <Testimonials
+                  image={TraceyPic}
+                  description={
+                    "“I had a great experience presenting the topic - Building Your MVP with Elixir -  to the Elixir Kenya community. The engagement and enthusiasm from the audience of Elixir enthusiasts were truly inspiring.”"
+                  }
+                  name={"Njoki Kiarie"}
                 />
               </div>
             </div>
@@ -251,7 +249,7 @@ function Landing() {
         <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
           <div>
             <div>
-              <h3 className="text-9xl">Watch our Webinars</h3>
+              <h3 className="text-5xl lg:text-9xl">Watch our Webinars</h3>
             </div>
             <div className="grid lg:grid-cols-3 mt-8 gap-10">
               <BlogCards
