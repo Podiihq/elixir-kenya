@@ -9,7 +9,11 @@ interface BlogCardProps {
 function BlogCards(props: BlogCardProps) {
   return (
     <div>
-      <img src={props.images} alt="" className="rounded-xl" />
+      <img
+        src={props.images}
+        alt=""
+        className="rounded-xl object-cover h-96 w-full"
+      />
       <p className="text-xs text-gray-500 mt-4">Uncategorized</p>
       <h4 className="py-4 font-bold text-4xl">{props.heading}</h4>
       <p className="text-xs text-gray-500">{props.date}</p>
@@ -23,7 +27,7 @@ function BlogCards(props: BlogCardProps) {
           className="lg:text-2xl py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-gray-900"
         >
           {" "}
-          Read More
+          Watch Video
         </motion.a>
       </div>
     </div>

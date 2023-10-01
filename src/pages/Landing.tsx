@@ -4,6 +4,11 @@ import Hero2 from "../assets/images/sub-hero-1.png";
 import Hero3 from "../assets/images/sub-hero-2.png";
 import Hero4 from "../assets/images/sub-hero-4.png";
 import Hero1 from "../assets/images/sub-hero-3.png";
+import UlrichPic from "../assets/images/speakers/peter-ullrich.jpeg";
+import RajPic from "../assets/images/speakers/raj-rajhans.png";
+import Session1 from "../assets/images/sessions/ulrich.png";
+import Session2 from "../assets/images/sessions/beam.png";
+import TraceyPic from "../assets/images/speakers/tracey.jpeg";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Marquee from "react-fast-marquee";
 
@@ -13,6 +18,7 @@ import CardsAlternate from "../components/CardsAlternate";
 import ExpandImages from "../components/ExpandImages";
 import BlogCards from "../components/BlogCards";
 import { Footer } from "../components/Footer";
+import Testimonials from "../components/Testimonials";
 
 function Landing() {
   const { scrollYProgress } = useScroll();
@@ -24,7 +30,7 @@ function Landing() {
   return (
     <>
       <motion.div
-        className="fixed inset-0 h-4 bg-gradient-to-r from-[#796612] to-red-600 bg-gray-600 origin-[0%] z-50"
+        className="fixed inset-0 h-4 bg-gradient-to-r from-[#2a242e] to-purple-600 bg-gray-600 origin-[0%] z-50"
         style={{ scaleX }}
       />
       <NavigationBar />
@@ -51,9 +57,9 @@ function Landing() {
             initial={{ x: "-100vw" }}
             animate={{ x: 0, type: "spring" }}
             transition={{ duration: 0.5 }}
-            className="leading-none uppercase text-[5rem] lg:text-[10.2rem] font-black py-8 text-gray-100 text-center"
+            className="leading-none text-[5rem] lg:text-[11.8rem] font-black py-8 text-gray-100 text-center"
           >
-            Design Conf
+            Elixir Kenya
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, scale: 0.5 }}
@@ -61,7 +67,8 @@ function Landing() {
             transition={{ duration: 1.5 }}
             className="text-lg lg:text-3xl text-gray-300 text-center"
           >
-            Master class and workeshops at <br></br> Design Conference.
+            Embark on a journey to amplify Elixir's <br></br>impact in Kenya
+            through our thriving community.
           </motion.p>
           <div className="flex justify-center mt-6">
             <motion.a
@@ -80,19 +87,25 @@ function Landing() {
         <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
           <Cards
             images={Hero2}
-            heading={"Unlocking Creativity"}
-            description={"Unlocking Creativity: Design Conference 2023"}
+            heading={"Our Monthly Webinars"}
+            description={
+              "Our webinars feature a rich tapestry of speakers from various backgrounds, each sharing their invaluable insights and expertise. Catering to a diverse audience, ranging from novices to seasoned developers, these talks are thoughtfully designed to resonate with attendees of all levels. "
+            }
           />
           <div className="py-8"></div>
           <CardsAlternate
             images={Hero3}
-            heading={"Productive Sessions"}
+            heading={"Monday Meetups"}
             description={
-              "Join us for an immersive three-day design conference where creativity knows no bounds. Connect with industry leaders, explore cutting-edge design trends, and fuel your passion for design innovation."
+              "Get ready to put your coding hats on because the Monday meetups are back and better than ever! Starting from April 17th, we'll be diving deep into the world of Phoenix liveview and building a real-life chat app project together!"
             }
           />
-
-          <div className="flex justify-center mt-12">
+          <div className="text-center py-8">
+            <p className="text-3xl">
+              Join our community to get updates about our meetups.
+            </p>
+          </div>
+          <div className="flex justify-center">
             <motion.a
               whileHover={{
                 scale: 1.1,
@@ -102,29 +115,29 @@ function Landing() {
               className="lg:text-2xl py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-gray-900"
             >
               {" "}
-              Join us today 😎
+              Join us today
             </motion.a>
           </div>
         </section>
-
-        <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
+        <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
           <div className="grid lg:grid-cols-2 gap-4 lg:gap-24 items-center">
             <div>
               <p className="text-5xl lg:text-8xl font-black uppercase leading-none text-center lg:text-left">
-                Design<br></br> Create & <br></br>Connect
+                Explore,<br></br> Create & <br></br>Connect
               </p>
               <p className="py-4 lg:py-8 text-xl text-center lg:text-left">
                 Dive deep into the latest tools and techniques with interactive,
-                practical{" "}
+                practical
                 <span className="uppercase font-semibold text-orange-500">
+                  {" "}
                   workshops
-                </span>{" "}
-                , connecting with fellow{" "}
+                </span>
+                , connecting with fellow
                 <span className="uppercase font-semibold text-yellow-500">
                   {" "}
-                  designers
+                  elixir developers
                 </span>
-                , potential collaborators, and{" "}
+                , potential collaborators, and
                 <span className="uppercase font-semibold text-green-500">
                   {" "}
                   mentors
@@ -140,7 +153,6 @@ function Landing() {
                   href=""
                   className="lg:text-2xl py-3 px-6 border text-white bg-gradient-to-r from-[#796612] to-red-600"
                 >
-                  {" "}
                   Our Community 😃
                 </motion.a>
               </div>
@@ -157,8 +169,8 @@ function Landing() {
         <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-32">
           <div>
             <div>
-              <h3 className="text-5xl lg:text-9xl uppercase text-center lg:text-left">
-                Our <br></br>Past Events.
+              <h3 className="text-5xl lg:text-9xl text-center lg:text-left">
+                Our <br></br>Past Speakers.
               </h3>
             </div>
           </div>
@@ -175,17 +187,62 @@ function Landing() {
           </div>
         </section>
 
-        <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
-          <div className="bg-[#131313] p-6 lg:p-12 rounded-xl shadow-lg">
-            <div className="text-5xl lg:text-[5.2rem] leading-none font-bold lg:font-black text-center">
-              🎨 Unlock Your Creative Potential at Design Conference 2023!
+        <section>
+          <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
+            <div>
+              <div>
+                <p className="text-8xl font-bold">
+                  What our speakers have to say,
+                </p>
+              </div>
+              <div className="grid grid-cols-2 mt-16 gap-10">
+                <Testimonials
+                  image={UlrichPic}
+                  description={
+                    "“Going to Elixir Kenya is always the most wonderful experience. This is where Africa's smartest and kindest people come together. It is the most welcoming community I've ever encountered.”"
+                  }
+                  name={"Peter Ulrich"}
+                />
+                <Testimonials
+                  image={TraceyPic}
+                  description={
+                    "“I loved that I could schedule time with the organizer a day before the event to plan and prepare for the event together. This helped me to calm down and know how the itinerary would be.”"
+                  }
+                  name={"Tracey Onim"}
+                />
+              </div>
             </div>
           </div>
-          <div className="text-center bg-orange-400 py-4 rounded-b-xl">
+        </section>
+
+        <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
+          <div className="bg-[#131313] p-6 lg:p-12 rounded-xl shadow-lg">
+            <p className="text-center pb-8 uppercase">Upcoming Events</p>
+            <div className="text-5xl lg:text-[5.2rem] leading-none font-bold lg:font-black text-center">
+              🤯Get ready to put your coding hats at{" "}
+              <span className="text-purple-500">ElixirConf Africa 2024 !</span>
+            </div>
+            <div className="flex justify-center mt-12">
+              <motion.a
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 8px rgba(255,255,255)",
+                }}
+                href=""
+                className="lg:text-2xl py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-gray-900"
+              >
+                {" "}
+                Buy Tickets 🎫
+              </motion.a>
+            </div>
+          </div>
+
+          <div className="text-center bg-purple-500 py-4 rounded-b-xl">
             <Marquee className="overflow-hidden">
               <p className="text-4xl">
-                - Design Conference 2023 - Design Conference 2023 - Design
-                Conference 2023
+                {" - "}
+                ElixirConf Africa 2024 - ElixirConf Africa 2024 - ElixirConf
+                Africa 2024
               </p>
             </Marquee>
           </div>
@@ -194,18 +251,18 @@ function Landing() {
         <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
           <div>
             <div>
-              <h3 className="text-9xl">Our Blogs</h3>
+              <h3 className="text-9xl">Watch our Webinars</h3>
             </div>
             <div className="grid lg:grid-cols-3 mt-8 gap-10">
               <BlogCards
-                images={Hero1}
-                heading={"Principles of interractive design"}
-                date={"19 July, 2023"}
+                images={Session2}
+                heading={"Beam: The perfect fit for Networks"}
+                date={"06 October, 2023"}
               />
               <BlogCards
-                images={Hero2}
-                heading={"Introduction to UX/UI"}
-                date={"23 December, 2020"}
+                images={Session1}
+                heading={"Monolith vs Microservices"}
+                date={"24 February, 2023"}
               />
               <BlogCards
                 images={Hero3}
