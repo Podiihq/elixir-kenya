@@ -1,10 +1,10 @@
 import NavigationBar from "../components/NavigationBar";
-import Gallary1 from "../assets/images/people.png";
-import Gallary2 from "../assets/images/group4.png";
-import Hero2 from "../assets/images/sub-hero-1.png";
-import Hero3 from "../assets/images/sub-hero-2.png";
-import Hero4 from "../assets/images/sub-hero-4.png";
-import Hero1 from "../assets/images/sub-hero-3.png";
+import MainHero from "../assets/images/Main-Hero.png";
+import Gallary2 from "../assets/images/people5.png";
+import Hero2 from "../assets/images/people1.png";
+import Hero3 from "../assets/images/people2.png";
+import Hero4 from "../assets/images/people3.png";
+import Hero1 from "../assets/images/people4.png";
 import UlrichPic from "../assets/images/speakers/peter-ullrich.jpeg";
 import RajPic from "../assets/images/speakers/raj-rajhans.png";
 import Session1 from "../assets/images/sessions/ulrich.png";
@@ -43,7 +43,7 @@ function Landing() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+            src={MainHero}
             alt=""
             className="object-cover w-full relative h-96"
           />
@@ -152,7 +152,7 @@ function Landing() {
             <ExpandImages image={Hero3} />
             <ExpandImages image={Hero2} />
             <ExpandImages image={Hero4} />
-            <ExpandImages image={Gallary1} />
+            <ExpandImages image={Hero3} />
             <ExpandImages image={Hero1} />
             <ExpandImages image={Gallary2} />
           </div>
@@ -258,18 +258,6 @@ function Landing() {
               >
                 Explore All Videos <span className="text-2xl">{">"}</span>
               </a>
-              {/* <div className="">
-                <motion.a
-                  whileHover={{
-                    scale: 1.1,
-                    boxShadow: "0px 0px 8px rgba(255,255,255)",
-                  }}
-                  href=""
-                  className="lg:text-2xl py-3 px-6 border text-white bg-purple-600"
-                >
-                  Explore All Videos 🛩️
-                </motion.a>
-              </div> */}
             </div>
             <div className="grid lg:grid-cols-3 mt-8 gap-10">
               <BlogCards
@@ -284,7 +272,7 @@ function Landing() {
               />
               <BlogCards
                 images={Session3}
-                heading={"Handling external requests in elixir."}
+                heading={"Handling external requests with elixir."}
                 date={"25 August, 2022"}
               />
             </div>
