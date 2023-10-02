@@ -8,7 +8,7 @@ import Hero1 from "../assets/images/sub-hero-3.png";
 import UlrichPic from "../assets/images/speakers/peter-ullrich.jpeg";
 import RajPic from "../assets/images/speakers/raj-rajhans.png";
 import Session1 from "../assets/images/sessions/ulrich.png";
-import Session2 from "../assets/images/sessions/beam.png";
+import Session2 from "../assets/images/sessions/njoki.png";
 import Session3 from "../assets/images/sessions/tracey.jpeg";
 import TraceyPic from "../assets/images/speakers/tracey.jpeg";
 import NjokiPic from "../assets/images/speakers/njoki.jpeg";
@@ -278,14 +278,14 @@ function Landing() {
                 date={"24 February, 2023"}
               />
               <BlogCards
+                images={Session2}
+                heading={"From Idea to MVP with Elixir."}
+                date={"31 March, 2023"}
+              />
+              <BlogCards
                 images={Session3}
                 heading={"Handling external requests in elixir."}
                 date={"25 August, 2022"}
-              />
-              <BlogCards
-                images={Session2}
-                heading={"Beam: The perfect fit for networks."}
-                date={"06 October, 2023"}
               />
             </div>
           </div>
