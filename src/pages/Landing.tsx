@@ -246,7 +246,7 @@ function Landing() {
           </div>
         </section>
 
-        <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
+        <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-16">
           <div>
             <div className="lg:flex justify-between items-end">
               <h3 className="text-5xl lg:text-8xl font-bold mb-4 lg:mb-0">
