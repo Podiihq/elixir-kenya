@@ -253,7 +253,7 @@ function Landing() {
                 Watch our <br></br>Webinars
               </h3>
               <a
-                href="#"
+                href="https://www.youtube.com/@elixirkenya"
                 className="underline text-lg text-purple-500 hover:text-white"
               >
                 Explore All Videos <span className="text-2xl">{">"}</span>
@@ -264,16 +264,19 @@ function Landing() {
                 images={Session1}
                 heading={"Monolith vs Microservices."}
                 date={"24 February, 2023"}
+                link="https://www.youtube.com/watch?v=ptSttJit91U"
               />
               <BlogCards
                 images={Session2}
                 heading={"From Idea to MVP with Elixir."}
                 date={"31 March, 2023"}
+                link="https://www.youtube.com/watch?v=SkeQ6IEJZdo"
               />
               <BlogCards
                 images={Session3}
                 heading={"Handling external requests with elixir."}
                 date={"25 August, 2022"}
+                link="#"
               />
             </div>
           </div>

@@ -4,6 +4,7 @@ interface BlogCardProps {
   images: string;
   heading: string;
   date: string;
+  link: string;
 }
 
 function BlogCards(props: BlogCardProps) {
@@ -23,7 +24,7 @@ function BlogCards(props: BlogCardProps) {
             scale: 1.1,
             boxShadow: "0px 0px 8px rgba(255,255,255)",
           }}
-          href=""
+          href={props.link}
           className="lg:text-2xl py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-gray-900"
         >
           {" "}
