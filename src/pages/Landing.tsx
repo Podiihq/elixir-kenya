@@ -1,5 +1,6 @@
 import NavigationBar from "../components/NavigationBar";
-import HeroImage from "../assets/images/hero-final.png";
+import Gallary1 from "../assets/images/people.png";
+import Gallary2 from "../assets/images/group4.png";
 import Hero2 from "../assets/images/sub-hero-1.png";
 import Hero3 from "../assets/images/sub-hero-2.png";
 import Hero4 from "../assets/images/sub-hero-4.png";
@@ -32,7 +33,7 @@ function Landing() {
   return (
     <>
       <motion.div
-        className="fixed inset-0 h-4 bg-gradient-to-r from-[#2a242e] to-purple-600 bg-gray-600 origin-[0%] z-50"
+        className="fixed inset-0 h-4 bg-gradient-to-r from-[#2a242e] to-purple-600 bg-black origin-[0%] z-50"
         style={{ scaleX }}
       />
       <NavigationBar />
@@ -99,8 +100,10 @@ function Landing() {
         <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
           <div className="grid lg:grid-cols-2 gap-4 lg:gap-24 items-center">
             <div>
-              <p className="text-5xl lg:text-8xl font-black leading-none text-center lg:text-left">
-                Explore,<br></br> Create & <br></br>Connect
+              <p className="text-5xl lg:text-8xl font-bold leading-none text-center lg:text-left">
+                Explore,<br></br>
+                <span className="text-purple-800">Create & </span> <br></br>
+                Connect
               </p>
               <p className="py-4 lg:py-8 text-xl text-center lg:text-left">
                 Dive deep into the latest tools and techniques with interactive,
@@ -128,7 +131,7 @@ function Landing() {
                     boxShadow: "0px 0px 8px rgba(255,255,255)",
                   }}
                   href="https://t.me/elixirkenya"
-                  className="lg:text-2xl py-3 px-6 border text-white bg-gradient-to-r from-[#796612] to-red-600"
+                  className="lg:text-2xl py-3 px-6 border text-white bg-gradient-to-r from-[#492e5f] to-[#131313]"
                 >
                   Our Community 😃
                 </motion.a>
@@ -149,9 +152,9 @@ function Landing() {
             <ExpandImages image={Hero3} />
             <ExpandImages image={Hero2} />
             <ExpandImages image={Hero4} />
-            <ExpandImages image={HeroImage} />
+            <ExpandImages image={Gallary1} />
             <ExpandImages image={Hero1} />
-            <ExpandImages image={HeroImage} />
+            <ExpandImages image={Gallary2} />
           </div>
         </section>
 
@@ -160,7 +163,7 @@ function Landing() {
             <div>
               <div>
                 <p className="text-5xl lg:text-8xl font-bold">
-                  What our <span className="text-purple-500"> speakers </span>{" "}
+                  What our <span className="text-purple-800"> speakers </span>{" "}
                   have to say,
                 </p>
               </div>
@@ -201,7 +204,7 @@ function Landing() {
                     boxShadow: "0px 0px 8px rgba(255,255,255)",
                   }}
                   href=""
-                  className="lg:text-2xl py-3 px-6 border text-purple-500 bg-gray-100 font-semibold"
+                  className="lg:text-2xl py-3 px-6 border text-purple-800 bg-gray-100 font-semibold"
                 >
                   Become Speaker 🎙️
                 </motion.a>
@@ -227,12 +230,12 @@ function Landing() {
                 className="lg:text-2xl py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-gray-900"
               >
                 {" "}
-                Buy Tickets 🎫
+                Get Tickets 🎫
               </motion.a>
             </div>
           </div>
 
-          <div className="text-center bg-purple-500 py-4 rounded-b-xl">
+          <div className="text-center bg-purple-800 py-4 rounded-b-xl">
             <Marquee className="overflow-hidden">
               <p className="text-4xl">
                 {" - "}
@@ -245,10 +248,28 @@ function Landing() {
 
         <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-32">
           <div>
-            <div>
-              <h3 className="text-5xl lg:text-8xl font-bold">
+            <div className="lg:flex justify-between items-end">
+              <h3 className="text-5xl lg:text-8xl font-bold mb-4 lg:mb-0">
                 Watch our <br></br>Webinars
               </h3>
+              <a
+                href="#"
+                className="underline text-lg text-purple-500 hover:text-white"
+              >
+                Explore All Videos <span className="text-2xl">{">"}</span>
+              </a>
+              {/* <div className="">
+                <motion.a
+                  whileHover={{
+                    scale: 1.1,
+                    boxShadow: "0px 0px 8px rgba(255,255,255)",
+                  }}
+                  href=""
+                  className="lg:text-2xl py-3 px-6 border text-white bg-purple-600"
+                >
+                  Explore All Videos 🛩️
+                </motion.a>
+              </div> */}
             </div>
             <div className="grid lg:grid-cols-3 mt-8 gap-10">
               <BlogCards
@@ -266,18 +287,6 @@ function Landing() {
                 heading={"Beam: The perfect fit for networks."}
                 date={"06 October, 2023"}
               />
-            </div>
-            <div className="pt-10 lg:pt-32 flex justify-center">
-              <motion.a
-                whileHover={{
-                  scale: 1.1,
-                  boxShadow: "0px 0px 8px rgba(255,255,255)",
-                }}
-                href=""
-                className="lg:text-2xl py-3 px-6 border text-white bg-purple-600"
-              >
-                Explore All Videos 🛩️
-              </motion.a>
             </div>
           </div>
         </section>

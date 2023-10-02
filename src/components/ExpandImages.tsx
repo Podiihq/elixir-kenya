@@ -10,8 +10,9 @@ function ExpandImages(props: ExpandImageProps) {
       <motion.img
         initial={{ width: 200, height: 400, flexGrow: 0 }}
         whileHover={{
-          scale: 1.2,
-          width: 4000,
+          scale: 1.5,
+          width: 400,
+          height: 200,
         }}
         src={props.image}
         alt=""
