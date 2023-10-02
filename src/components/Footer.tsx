@@ -25,6 +25,12 @@ export const Footer = () => {
             >
               <i className="fa fa-telegram text-2xl"></i>
             </a>
+            <a
+              href="https://www.linkedin.com/showcase/elixirkenya/"
+              className="text-gray-300 hover:text-gray-500"
+            >
+              <i className="fa fa-linkedin text-2xl"></i>
+            </a>
           </div>
         </div>
       </div>
