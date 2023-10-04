@@ -276,7 +276,7 @@ function Landing() {
                 images={Session3}
                 heading={"Handling external requests with elixir."}
                 date={"25 August, 2022"}
-                link="#"
+                link="https://www.youtube.com/watch?v=EQ-ZRP5FKZ8"
               />
             </div>
           </div>
