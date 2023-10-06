@@ -203,7 +203,7 @@ function Landing() {
                     scale: 1.1,
                     boxShadow: "0px 0px 8px rgba(255,255,255)",
                   }}
-                  href=""
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfYdGiYQ5qHg4bIazOB0bSouFKvpxN5J3k6N7o1RpppmyiafA/viewform"
                   className="lg:text-2xl py-3 px-6 border text-purple-800 bg-gray-100 font-semibold"
                 >
                   Become Speaker 🎙️
