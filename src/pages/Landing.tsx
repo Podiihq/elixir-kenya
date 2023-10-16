@@ -12,6 +12,7 @@ import Session2 from "../assets/images/sessions/njoki.png";
 import Session3 from "../assets/images/sessions/tracey.jpeg";
 import TraceyPic from "../assets/images/speakers/tracey.jpeg";
 import NjokiPic from "../assets/images/speakers/njoki.jpeg";
+import PodiiLogo from "../assets/images/Podii_logo.png";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Marquee from "react-fast-marquee";
 
@@ -278,6 +279,16 @@ function Landing() {
                 date={"25 August, 2022"}
                 link="https://www.youtube.com/watch?v=EQ-ZRP5FKZ8"
               />
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
+            <div>
+              <h3 className="text-5xl lg:text-8xl font-bold mb-4 lg:mb-0">
+                Supporters &<br></br>Enablers
+              </h3>
+              <img src={PodiiLogo} alt="" className="lg:mt-16 mt-8 lg:w-1/5" />
             </div>
           </div>
         </section>
