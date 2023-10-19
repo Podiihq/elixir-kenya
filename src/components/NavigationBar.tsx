@@ -15,10 +15,11 @@ function NavigationBar() {
               boxShadow: "0px 0px 8px rgba(255,255,255)",
             }}
             href="https://t.me/elixirkenya"
-            className="no-wrap py-3 px-6 bg-purple-500 text-white hover:text-black hover:bg-gray-200"
+            className="flex items-center gap-2 no-wrap py-3 px-6 bg-purple-500 text-white hover:text-black hover:bg-gray-200"
           >
             {" "}
-            Join Community 🔥
+            Join Community
+            <i className="fa fa-telegram text-2xl"></i>
           </motion.a>
         </div>
       </div>

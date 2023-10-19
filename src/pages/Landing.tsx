@@ -1,5 +1,5 @@
 import NavigationBar from "../components/NavigationBar";
-import MainHero from "../assets/images/Main-Hero.png";
+import MainHero from "../assets/images/main-hero.jpg";
 import Gallary2 from "../assets/images/people5.png";
 import Hero2 from "../assets/images/people1.png";
 import Hero3 from "../assets/images/people2.png";
@@ -50,35 +50,21 @@ function Landing() {
           />
         </div>
         <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-          <motion.h1
-            initial={{ x: "-100vw" }}
-            animate={{ x: 0, type: "spring" }}
-            transition={{ duration: 0.5 }}
-            className="leading-none text-[5rem] lg:text-[11.8rem] font-black py-8 text-gray-100 text-center"
-          >
+          <h1 className="leading-none text-[5rem] lg:text-[11.8rem] font-black py-8 text-gray-100 text-center">
             Elixir Kenya
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.5 }}
-            className="text-lg lg:text-3xl text-gray-300 text-center"
-          >
+          </h1>
+          <p className="text-lg lg:text-3xl text-gray-300 text-center">
             Embark on a journey to amplify Elixir's <br></br>impact in Kenya
             through our thriving community.
-          </motion.p>
+          </p>
           <div className="flex justify-center mt-6">
-            <motion.a
-              whileHover={{
-                scale: 1.1,
-                boxShadow: "0px 0px 8px rgba(255,255,255)",
-              }}
+            <a
               href="https://t.me/elixirkenya"
               className="lg:text-2xl py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-gray-900"
             >
               {" "}
               Let's Rock 🔥
-            </motion.a>
+            </a>
           </div>
         </div>
         <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
@@ -254,7 +240,7 @@ function Landing() {
                 Watch our <br></br>Webinars
               </h3>
               <a
-                href="https://www.youtube.com/@elixirkenya"
+                href="https://www.youtube.com/watch?v=EQ-ZRP5FKZ8&list=PLed5yhS5IfIBXD02laL3EidyebWWECxsi"
                 className="underline text-lg text-purple-500 hover:text-white"
               >
                 Explore All Videos <span className="text-2xl">{">"}</span>
