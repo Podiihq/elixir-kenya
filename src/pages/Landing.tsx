@@ -69,7 +69,7 @@ function Landing() {
             Elixir KENYA COMMUNITY
           </h1> */}
           <p className="text-4xl text-white font-extrabold lg:text-[68px] lg:leading-[74px] lg:w-2/3 ">
-            Join our vibrant community to elevate your Elixir journey
+            Join our vibrant community to elevate your Elixir journey.
           </p>
           <p className="text-[#D9D9D9] lg:w-2/3 mt-8">
             Embark on a journey to amplify Elixir's impact in Kenya through our
@@ -119,8 +119,8 @@ function Landing() {
             </div>
           </div>
         </div>
-        <div className="bg-[#171717]">
-          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
+        <div className="bg-[#171717] ">
+          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-16 lg:pt-16">
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
               <div>
                 <img src={AboutImage} alt="" />
@@ -160,10 +160,10 @@ function Landing() {
 
           <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
             <h1
-              className="text-5xl lg:text-6xl font-extrabold text-[#79628C] pb-8 text-center lg:mb-8"
+              className="text-5xl lg:text-6xl font-extrabold  pb-8 text-center lg:mb-8"
               id="webinars"
             >
-              Our Webinars
+              Our <span className="text-[#79628C]">Webinars</span>
             </h1>
             <Cards
               images={Hero2}
