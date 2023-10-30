@@ -65,9 +65,6 @@ function Landing() {
         </div>
         <NavigationBar />
         <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:my-10">
-          {/* <h1 className=" uppercase font-semibold py-4 text-[#79628C] lg:mt-10 ">
-            Elixir KENYA COMMUNITY
-          </h1> */}
           <p className="text-4xl text-white font-extrabold lg:text-[68px] lg:leading-[74px] lg:w-2/3 ">
             Join our vibrant community to elevate your Elixir journey.
           </p>
