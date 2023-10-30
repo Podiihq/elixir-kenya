@@ -6,13 +6,15 @@ interface CardProps {
 
 function Cards(props: CardProps) {
   return (
-    <div className="grid lg:grid-cols-2 items-center bg-[#131313] rounded-xl text-gray-100">
+    <div className="grid lg:grid-cols-2 items-center bg-[#1E1E1E] rounded-xl text-gray-100">
       <div>
         <img src={props.images} alt="" className="w-full h-full object-cover" />
       </div>
-      <div className="text-right px-6 lg:px-12 py-20">
-        <h3 className="text-5xl lg:text-7xl font-bold">{props.heading}</h3>
-        <p className="mt-8">{props.description}</p>
+      <div className="px-6 lg:px-12 py-8 lg:py-20">
+        <h3 className="text-2xl lg:text-[36px] font-semibold">
+          {props.heading}
+        </h3>
+        <p className="mt-4 lg:mt-8 text-[#D9D9D9]">{props.description}</p>
       </div>
     </div>
   );

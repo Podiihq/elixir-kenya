@@ -1,15 +1,28 @@
-import { motion } from "framer-motion";
 import LogoIcon from "../assets/images/logo/logo.png";
 
 function NavigationBar() {
   return (
-    <div className="bg-black w-full">
+    <div className="w-full">
       <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div className="flex justify-between items-center ">
+        <div className="lg:flex justify-between items-center ">
           <a href="#">
-            <img src={LogoIcon} alt="" className="w-24" />
+            <img src={LogoIcon} alt="" className="w-20 lg:w-24" />
           </a>
-          <motion.a
+          <div className="text-[#D9D9D9] lg:flex gap-8 font-semibold hidden">
+            <a href="" className="hover:text-[#79628C]">
+              About Us
+            </a>
+            <a href="" className="hover:text-[#79628C]">
+              Meetups
+            </a>
+            <a href="" className="hover:text-[#79628C]">
+              Speakers
+            </a>
+            <a href="" className="hover:text-[#79628C]">
+              Webinars
+            </a>
+          </div>
+          {/* <motion.a
             whileHover={{
               scale: 1.1,
               boxShadow: "0px 0px 8px rgba(255,255,255)",
@@ -20,7 +33,7 @@ function NavigationBar() {
             {" "}
             Join Community
             <i className="fa fa-telegram text-2xl"></i>
-          </motion.a>
+          </motion.a> */}
         </div>
       </div>
     </div>
