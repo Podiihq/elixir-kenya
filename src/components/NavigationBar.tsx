@@ -9,16 +9,16 @@ function NavigationBar() {
             <img src={LogoIcon} alt="" className="w-20 lg:w-24" />
           </a>
           <div className="text-[#D9D9D9] lg:flex gap-8 font-semibold hidden">
-            <a href="" className="hover:text-[#79628C]">
+            <a href="#about" className="hover:text-[#79628C]">
               About Us
             </a>
-            <a href="" className="hover:text-[#79628C]">
+            <a href="#webinars" className="hover:text-[#79628C]">
               Meetups
             </a>
-            <a href="" className="hover:text-[#79628C]">
+            <a href="#speakers" className="hover:text-[#79628C]">
               Speakers
             </a>
-            <a href="" className="hover:text-[#79628C]">
+            <a href="#watch" className="hover:text-[#79628C]">
               Webinars
             </a>
           </div>

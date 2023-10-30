@@ -16,9 +16,11 @@ function BlogCards(props: BlogCardProps) {
         className="rounded-xl object-cover h-96 w-full"
       />
       <p className="text-xs text-gray-500 mt-4">Uncategorized</p>
-      <h4 className="py-4 font-bold text-4xl">{props.heading}</h4>
+      <h4 className="py-2 lg:py-4 font-bold text-2xl lg:text-4xl">
+        {props.heading}
+      </h4>
       <p className="text-xs text-gray-500">{props.date}</p>
-      <div className="mt-12">
+      <div className="mt-6 lg:mt-12">
         <motion.a
           whileHover={{
             scale: 1.1,

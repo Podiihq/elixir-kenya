@@ -79,13 +79,17 @@ function Landing() {
           </p>
           <div className="my-8">
             <div className="flex gap-10">
-              <a
+              <motion.a
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 8px rgba(100,100,255)",
+                }}
                 href="https://t.me/elixirkenya"
                 className="lg:text-xl py-3 px-6 bg-[#79628C] text-white hover:bg-[#9d68c9] font-semibold"
               >
                 {" "}
                 Let's Rock 🔥
-              </a>
+              </motion.a>
               <div className="flex justify-center lg:justify-normal items-center mt-4 space-x-4 sm:mt-0">
                 <a
                   href="https://www.youtube.com/@elixirkenya"
@@ -121,7 +125,7 @@ function Landing() {
               <div>
                 <img src={AboutImage} alt="" />
               </div>
-              <div>
+              <div id="about">
                 <h1 className="text-2xl lg:text-[36px] font-extrabold text-white pb-8">
                   About Us
                 </h1>
@@ -155,7 +159,10 @@ function Landing() {
           </section>
 
           <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
-            <h1 className="text-2xl lg:text-[36px] font-extrabold text-[#79628C] pb-8 text-center lg:mb-8">
+            <h1
+              className="text-5xl lg:text-6xl font-extrabold text-[#79628C] pb-8 text-center lg:mb-8"
+              id="webinars"
+            >
               Our Webinars
             </h1>
             <Cards
@@ -175,10 +182,10 @@ function Landing() {
             />
           </section>
 
-          <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+          {/* <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
             <div className="grid lg:grid-cols-2 gap-4 lg:gap-24 items-center">
               <div>
-                <p className="text-5xl lg:text-8xl font-bold leading-none text-center lg:text-left">
+                <p className="text-5xl lg:text-[36px] font-extrabold leading-none text-center lg:text-left">
                   Explore,<br></br>
                   <span className="text-purple-800">Create & </span> <br></br>
                   Connect
@@ -223,25 +230,14 @@ function Landing() {
                 />
               </div>
             </div>
-          </section>
+          </section> */}
 
-          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-32">
-            <div className="grid lg:grid-cols-6 lg:gap-4 grid-cols-2">
-              <ExpandImages image={Hero3} />
-              <ExpandImages image={Hero2} />
-              <ExpandImages image={Hero4} />
-              <ExpandImages image={Hero3} />
-              <ExpandImages image={Hero1} />
-              <ExpandImages image={Gallary2} />
-            </div>
-          </section>
-
-          <section>
+          <section id="speakers">
             <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-32">
               <div>
                 <div>
-                  <p className="text-5xl lg:text-8xl font-bold">
-                    What our <span className="text-purple-800"> speakers </span>{" "}
+                  <p className="text-5xl lg:text-6xl font-bold lg:w-1/2">
+                    What our <span className="text-[#79628C]"> speakers </span>{" "}
                     have to say,
                   </p>
                 </div>
@@ -292,11 +288,22 @@ function Landing() {
           </section>
 
           <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-32">
+            <div className="grid lg:grid-cols-6 lg:gap-4 grid-cols-2">
+              <ExpandImages image={Hero3} />
+              <ExpandImages image={Hero2} />
+              <ExpandImages image={Hero4} />
+              <ExpandImages image={Hero3} />
+              <ExpandImages image={Hero1} />
+              <ExpandImages image={Gallary2} />
+            </div>
+          </section>
+
+          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-32">
             <div className="bg-[#131313] p-6 lg:p-12 rounded-xl shadow-lg">
               <p className="text-center pb-8 uppercase">Upcoming Event</p>
-              <div className="text-5xl lg:text-[5.2rem] leading-none font-bold lg:font-black text-center">
+              <div className="text-3xl lg:text-[5.2rem] leading-none font-bold lg:font-black text-center">
                 🤯Get ready to put your coding hats at{" "}
-                <span className="text-purple-500">
+                <span className="text-[#79628C] ">
                   ElixirConf Africa 2024 !
                 </span>
               </div>
@@ -307,7 +314,7 @@ function Landing() {
                     boxShadow: "0px 0px 8px rgba(255,255,255)",
                   }}
                   href="https://elixirconf.africa/"
-                  className="lg:text-2xl py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-gray-900"
+                  className="lg:text-2xl py-3 px-6 border text-white border-gradient-to-r to-[#00D68E] from-[#6941C6] hover:bg-[#79628C] "
                 >
                   {" "}
                   Get Tickets 🎫
@@ -315,9 +322,9 @@ function Landing() {
               </div>
             </div>
 
-            <div className="text-center bg-purple-800 py-4 rounded-b-xl">
+            <div className="text-center bg-[#79628C] py-2 lg:py-4 rounded-b-xl">
               <Marquee className="overflow-hidden">
-                <p className="text-4xl">
+                <p className="text-2xl lg:text-4xl">
                   {" - "}
                   ElixirConf Africa 2024 - ElixirConf Africa 2024 - ElixirConf
                   Africa 2024
@@ -328,18 +335,19 @@ function Landing() {
 
           <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-16">
             <div>
-              <div className="lg:flex justify-between items-end">
-                <h3 className="text-5xl lg:text-8xl font-bold mb-4 lg:mb-0">
-                  Watch our <br></br>Webinars
+              <div className="lg:flex justify-between items-end" id="watch">
+                <h3 className="text-5xl lg:text-6xl font-bold mb-4 lg:mb-0 lg:w-1/2">
+                  Watch Our <span className="text-[#79628C]">Previous </span>{" "}
+                  Webinars
                 </h3>
                 <a
                   href="https://www.youtube.com/watch?v=EQ-ZRP5FKZ8&list=PLed5yhS5IfIBXD02laL3EidyebWWECxsi"
-                  className="underline text-lg text-purple-500 hover:text-white"
+                  className="underline text-lg text-[#79628C] font-semibold hover:text-white"
                 >
-                  Explore All Videos <span className="text-2xl">{">"}</span>
+                  Explore All Videos{" "}
                 </a>
               </div>
-              <div className="grid lg:grid-cols-3 mt-8 gap-10">
+              <div className="grid lg:grid-cols-3 mt-8 gap-16 lg:gap-10">
                 <BlogCards
                   images={Session1}
                   heading={"Monolith vs Microservices."}
@@ -364,14 +372,10 @@ function Landing() {
           <section>
             <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
               <div>
-                <h3 className="text-5xl lg:text-8xl font-bold mb-4 lg:mb-0">
-                  Supporters &<br></br>Enablers
+                <h3 className="text-5xl lg:text-6xl font-bold mb-4 lg:mb-0">
+                  Supporters & Enablers
                 </h3>
-                <img
-                  src={PodiiLogo}
-                  alt=""
-                  className="lg:mt-16 mt-8 lg:w-1/5"
-                />
+                <img src={PodiiLogo} alt="" className="lg:mt-8 mt-8 lg:w-1/5" />
               </div>
             </div>
           </section>
