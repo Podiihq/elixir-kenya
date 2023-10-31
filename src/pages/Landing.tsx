@@ -85,7 +85,7 @@ function Landing() {
                 className="lg:text-xl py-3 px-6 bg-[#79628C] text-white hover:bg-[#9d68c9] font-semibold"
               >
                 {" "}
-                Let's Rock 🔥
+                Join Community
               </motion.a>
               <div className="flex justify-center lg:justify-normal items-center mt-4 space-x-4 sm:mt-0">
                 <a
@@ -117,7 +117,7 @@ function Landing() {
           </div>
         </div>
         <div className="bg-[#171717] ">
-          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-16 lg:pt-16">
+          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-32 lg:pb-16">
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
               <div>
                 <img src={AboutImage} alt="" />
