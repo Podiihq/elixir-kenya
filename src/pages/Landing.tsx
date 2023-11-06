@@ -1,6 +1,7 @@
-import NavigationBar from "../components/NavigationBar";
-import MainHero from "../assets/images/new/hreo.png";
-import AboutImage from "../assets/images/new/about.png";
+// import NavigationBar from "../components/NavigationBar";
+import MainHero from "../assets/images/new/Hero.png";
+import MobileHero from "../assets/images/new/HeroMobile.svg";
+import AboutImage from "../assets/images/new/about.svg";
 import Gallary2 from "../assets/images/people5.png";
 import Hero2 from "../assets/images/people1.png";
 import Hero3 from "../assets/images/people2.png";
@@ -25,6 +26,8 @@ import BlogCards from "../components/BlogCards";
 import { Footer } from "../components/Footer";
 import Testimonials from "../components/Testimonials";
 import { useState } from "react";
+
+import LogoIcon from "../assets/images/logo/logo.png";
 
 function Landing() {
   const { scrollYProgress } = useScroll();
@@ -52,8 +55,11 @@ function Landing() {
         style={{ scaleX }}
       />
 
-      <div className="text-gray-100" style={{ fontFamily: "Roboto" }}>
-        <div className="">
+      <div
+        className="text-gray-100 bg-[#171717]"
+        style={{ fontFamily: "Roboto" }}
+      >
+        {/* <div className="">
           <motion.img
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -62,105 +68,131 @@ function Landing() {
             alt=""
             className="object-cover w-full  h-full absolute -z-10"
           />
-        </div>
-        <NavigationBar />
-        <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:my-10">
-          <p className="text-4xl text-white font-extrabold lg:text-[68px] lg:leading-[74px] lg:w-2/3 ">
-            Join our vibrant community to elevate your Elixir journey.
-          </p>
-          <p className="text-[#D9D9D9] lg:w-2/3 mt-8">
-            Embark on a journey to amplify Elixir's impact in Kenya through our
-            thriving community. Join us to elevate your skills and experiences,
-            as we unite passionate Elixir enthusiasts, foster innovation, and
-            drive the advancement of technology in the heart of Kenya.
-          </p>
-          <div className="my-8">
-            <div className="flex gap-10">
-              <motion.a
-                whileHover={{
-                  scale: 1.1,
-                  boxShadow: "0px 0px 8px rgba(100,100,255)",
-                }}
-                href="https://t.me/elixirkenya"
-                className="lg:text-xl py-3 px-6 bg-[#79628C] text-white hover:bg-[#9d68c9] font-semibold"
-              >
-                {" "}
-                Join Community
-              </motion.a>
-              <div className="flex justify-center lg:justify-normal items-center mt-4 space-x-4 sm:mt-0">
-                <a
-                  href="https://www.youtube.com/@elixirkenya"
-                  className="text-gray-300 hover:text-gray-500"
-                >
-                  <i className="fa fa-youtube text-2xl"></i>
-                </a>
-                <a
-                  href="https://twitter.com/ElixirKenya"
-                  className="text-gray-300 hover:text-gray-500"
-                >
-                  <i className="fa fa-twitter text-2xl"></i>
-                </a>
-                <a
-                  href="https://t.me/elixirkenya"
-                  className="text-gray-300 hover:text-gray-500"
-                >
-                  <i className="fa fa-telegram text-2xl"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/showcase/elixirkenya/"
-                  className="text-gray-300 hover:text-gray-500"
-                >
-                  <i className="fa fa-linkedin text-2xl"></i>
-                </a>
+        </div> */}
+        {/* <NavigationBar /> */}
+        <div className="lg:grid grid-cols-2 flex flex-col-reverse">
+          <div className="xl:ml-56 ">
+            <div className="px-4 md:px-8">
+              <img src={LogoIcon} alt="" className="w-24 hidden lg:block" />
+              <p className="lg:text-xl text-lg uppercase font-semibold mb-4 lg:mt-20 text-center lg:text-left">
+                Elixir Kenya
+              </p>
+              <p className="text-4xl text-white font-extrabold xl:text-[68px] leading-none text-center lg:text-left">
+                Join our vibrant community to elevate your Elixir journey.
+              </p>
+              <p className="text-[#D9D9D9] mt-4 lg:mt-8 text-lg text-center lg:text-left">
+                Embark on a journey to amplify Elixir's impact in Kenya through
+                our thriving community.
+                <span className="hidden xl:block">
+                  Join us to elevate your skills and experiences, as we unite
+                  passionate Elixir enthusiasts, foster innovation, and drive
+                  the advancement of technology in the heart of Kenya.
+                </span>
+              </p>
+              <div className="my-4 lg:my-8">
+                <div className="lg:flex gap-10">
+                  <div className="flex justify-center mb-4">
+                    <motion.a
+                      whileHover={{
+                        scale: 1.1,
+                        boxShadow: "0px 0px 8px rgba(100,100,255)",
+                      }}
+                      href="https://t.me/elixirkenya"
+                      className="xl:text-xl py-3 px-6 bg-purple-600 text-white hover:bg-[#9d68c9] font-semibold"
+                    >
+                      {" "}
+                      Join Community
+                    </motion.a>
+                  </div>
+
+                  <div className="flex justify-center lg:justify-normal items-center mt-4 space-x-4 sm:mt-0 py-4 lg:py-0">
+                    <a
+                      href="https://www.youtube.com/@elixirkenya"
+                      className="text-gray-300 hover:text-gray-500"
+                    >
+                      <i className="fa fa-youtube text-2xl"></i>
+                    </a>
+                    <a
+                      href="https://twitter.com/ElixirKenya"
+                      className="text-gray-300 hover:text-gray-500"
+                    >
+                      <i className="fa fa-twitter text-2xl"></i>
+                    </a>
+                    <a
+                      href="https://t.me/elixirkenya"
+                      className="text-gray-300 hover:text-gray-500"
+                    >
+                      <i className="fa fa-telegram text-2xl"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/showcase/elixirkenya/"
+                      className="text-gray-300 hover:text-gray-500"
+                    >
+                      <i className="fa fa-linkedin text-2xl"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <div className="flex lg:block">
+            <img src={LogoIcon} alt="" className="w-20 h-16 lg:hidden m-4" />
+            <img src={MainHero} alt="" className="w-full hidden lg:block" />
+            <img
+              src={MobileHero}
+              alt=""
+              className="w-full overflow-hidden lg:hidden"
+            />
+          </div>
         </div>
-        <div className="bg-[#171717] ">
-          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-32 lg:pb-16">
-            <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-              <div>
-                <img src={AboutImage} alt="" />
-              </div>
-              <div id="about">
-                <h1 className="text-2xl lg:text-[36px] font-extrabold text-white pb-8">
-                  About Us
-                </h1>
-                <p className="mb-2 text-[#D9D9D9]">
-                  Welcome to Elixir Kenya, your hub for all things Elixir
-                  programming language in the heart of Africa. At Elixir Kenya,
-                  we're passionate about fostering a vibrant community of Elixir
-                  enthusiasts, developers, and learners. Our mission is to
-                  promote the adoption and understanding of Elixir among tech
-                  enthusiasts across Kenya and beyond.
-                </p>
-                <p className="mb-2 hidden lg:block text-[#D9D9D9]">
-                  What sets us apart is our commitment to knowledge sharing and
-                  collaboration. We host a variety of engaging events to
-                  facilitate learning and networking. Join us for our monthly
-                  webinars, where industry experts share insights, best
-                  practices, and the latest developments in the Elixir
-                  ecosystem. Dive deep into discussions, problem-solving, and
-                  live coding at our Monday meetups, part of our Live View
-                  series
-                </p>
-                <p className="block lg:hidden">{displayText}</p>
-                <button
-                  onClick={toggleText}
-                  className="font-bold block lg:hidden"
-                >
-                  {isFullTextDisplayed ? "Read More" : "Read Less"}
-                </button>
-              </div>
-            </div>
-          </section>
 
-          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32">
+        <div className="bg-[#171717] ">
+          <div className="bg-[#1E1E1E]">
+            <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:pt-32 lg:pb-16">
+              <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+                <div>
+                  <img src={AboutImage} alt="" />
+                </div>
+                <div id="about">
+                  <h1 className="text-2xl lg:text-[36px] font-extrabold text-white pb-8">
+                    About Us
+                  </h1>
+                  <p className="mb-2 text-[#D9D9D9]">
+                    Welcome to Elixir Kenya, your hub for all things Elixir
+                    programming language in the heart of Africa. At Elixir
+                    Kenya, we're passionate about fostering a vibrant community
+                    of Elixir enthusiasts, developers, and learners. Our mission
+                    is to promote the adoption and understanding of Elixir among
+                    tech enthusiasts across Kenya and beyond.
+                  </p>
+                  <p className="mb-2 hidden lg:block text-[#D9D9D9]">
+                    What sets us apart is our commitment to knowledge sharing
+                    and collaboration. We host a variety of engaging events to
+                    facilitate learning and networking. Join us for our monthly
+                    webinars, where industry experts share insights, best
+                    practices, and the latest developments in the Elixir
+                    ecosystem. Dive deep into discussions, problem-solving, and
+                    live coding at our Monday meetups, part of our Live View
+                    series
+                  </p>
+                  <p className="block lg:hidden">{displayText}</p>
+                  <button
+                    onClick={toggleText}
+                    className="font-bold block lg:hidden"
+                  >
+                    {isFullTextDisplayed ? "Read More" : "Read Less"}
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-32">
             <h1
-              className="text-5xl lg:text-6xl font-extrabold  pb-8 text-center lg:mb-8"
+              className="text-5xl lg:text-6xl font-extrabold  pb-8 lg:mb-8"
               id="webinars"
             >
-              Our <span className="text-[#79628C]">Webinars</span>
+              Our <span className="text-purple-600">Webinars</span>
             </h1>
             <Cards
               images={Hero2}
@@ -230,11 +262,11 @@ function Landing() {
           </section> */}
 
           <section id="speakers">
-            <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-32">
+            <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:pb-32">
               <div>
                 <div>
                   <p className="text-5xl lg:text-6xl font-bold lg:w-1/2">
-                    What our <span className="text-[#79628C]"> speakers </span>{" "}
+                    What our <span className="text-purple-600"> speakers </span>{" "}
                     have to say,
                   </p>
                 </div>
@@ -284,7 +316,7 @@ function Landing() {
             </div>
           </section>
 
-          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-32">
+          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:pb-32">
             <div className="grid lg:grid-cols-6 lg:gap-4 grid-cols-2">
               <ExpandImages image={Hero3} />
               <ExpandImages image={Hero2} />
@@ -295,12 +327,12 @@ function Landing() {
             </div>
           </section>
 
-          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-32">
+          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:pb-32">
             <div className="bg-[#131313] p-6 lg:p-12 rounded-xl shadow-lg">
               <p className="text-center pb-8 uppercase">Upcoming Event</p>
               <div className="text-3xl lg:text-[5.2rem] leading-none font-bold lg:font-black text-center">
                 🤯Get ready to put your coding hats at{" "}
-                <span className="text-[#79628C] ">
+                <span className="text-purple-600 ">
                   ElixirConf Africa 2024 !
                 </span>
               </div>
@@ -319,23 +351,24 @@ function Landing() {
               </div>
             </div>
 
-            <div className="text-center bg-[#79628C] py-2 lg:py-4 rounded-b-xl">
+            <div className="text-center bg-purple-600 py-2 lg:py-4 rounded-b-xl">
               <Marquee className="overflow-hidden">
                 <p className="text-2xl lg:text-4xl">
                   {" - "}
                   ElixirConf Africa 2024 - ElixirConf Africa 2024 - ElixirConf
-                  Africa 2024
+                  Africa 2024 - ElixirConf Africa 2024 - ElixirConf Africa 2024
+                  - ElixirConf Africa 2024
                 </p>
               </Marquee>
             </div>
           </section>
 
-          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 pb-16">
+          <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 pb-16">
             <div>
               <div className="lg:flex justify-between items-end" id="watch">
                 <h3 className="text-5xl lg:text-6xl font-bold mb-4 lg:mb-0 lg:w-1/2">
-                  Watch Our <span className="text-[#79628C]">Previous </span>{" "}
-                  Webinars
+                  Watch Our<br></br>{" "}
+                  <span className="text-purple-600">Previous </span> Webinars
                 </h3>
                 <a
                   href="https://www.youtube.com/watch?v=EQ-ZRP5FKZ8&list=PLed5yhS5IfIBXD02laL3EidyebWWECxsi"
@@ -367,12 +400,12 @@ function Landing() {
             </div>
           </section>
           <section>
-            <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16">
+            <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-16">
               <div>
                 <h3 className="text-5xl lg:text-6xl font-bold mb-4 lg:mb-0">
                   Supporters & Enablers
                 </h3>
-                <img src={PodiiLogo} alt="" className="lg:mt-8 mt-8 lg:w-1/5" />
+                <img src={PodiiLogo} alt="" className="lg:mt-8 mt-8 lg:w-1/6" />
               </div>
             </div>
           </section>

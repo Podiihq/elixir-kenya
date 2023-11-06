@@ -17,7 +17,7 @@ function Testimonials(props: TestimonialProps) {
     >
       <div className="lg:flex gap-6 border border-[#333333] rounded p-8 items-center bg-[#131313]">
         <div>
-          <p className="lg:text-lg">{props.description}</p>
+          <p className="xl:text-lg">{props.description}</p>
           <p className="py-4 lg:py-0 lg:pt-10 text-gray-500">{props.name}</p>
         </div>
         <img
