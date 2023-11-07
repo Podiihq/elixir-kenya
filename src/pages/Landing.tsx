@@ -218,7 +218,7 @@ function Landing() {
               <div className=" text-center">
                 <div className="">
                   <p className="text-5xl lg:text-6xl font-bold leading-none text-center">
-                    Explore, <span className="text-purple-800">Create & </span>{" "}
+                    Explore, <span className="text-purple-600">Create & </span>{" "}
                     <br></br>
                     Connect
                   </p>
