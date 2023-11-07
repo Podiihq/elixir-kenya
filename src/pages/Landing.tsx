@@ -192,7 +192,7 @@ function Landing() {
               images={Hero2}
               heading={"Monthly Webinars"}
               description={
-                "Our webinars feature a rich tapestry of speakers from various backgrounds, each sharing their invaluable insights and expertise. Catering to a diverse audience, ranging from novices to seasoned developers, these talks are thoughtfully designed to resonate with attendees of all levels. "
+                "At Elixir Kenya, we proudly curate and host monthly webinars that serve as a dynamic platform for Elixir and open-source enthusiasts. Our webinars feature a rich tapestry of speakers from various backgrounds, each sharing their invaluable insights and expertise. Catering to a diverse audience, ranging from novices to seasoned developers, these talks are thoughtfully designed to resonate with attendees of all levels. By fostering an environment of continuous learning and diverse perspectives, we empower our participants to upskill, fostering a community that thrives on collective growth and shared knowledge. Join us every last Friday of the month from 3:00pm EAT and close up in learning.  "
               }
             />
             <div className="py-2 lg:py-8"></div>
@@ -200,7 +200,7 @@ function Landing() {
               images={Hero3}
               heading={"Monday Meetups"}
               description={
-                "Get ready to put your coding hats on because the Monday meetups are back and better than ever! Starting from April 17th, we'll be diving deep into the world of Phoenix liveview and building a real-life chat app project together!"
+                "Hey guys!! Get ready to put your coding hats on because the Monday meetups are back and better than ever!🤩. Starting from April 17th, we'll be diving deep into the world of Phoenix liveview and building a real-life chat app project together! 🚀. So, whether you're a seasoned developer or just starting out, join us as we explore the exciting possibilities of liveview. Don't miss out on the chance to level up your coding skills and connect with like-minded individuals! See you there! 🤗"
               }
             />
           </section>
