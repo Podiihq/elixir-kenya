@@ -26,7 +26,7 @@ import { Footer } from "../components/Footer";
 import Testimonials from "../components/Testimonials";
 import { useState } from "react";
 
-import LogoIcon from "../assets/images/logo/logo.png";
+import NavigationBar from "../components/NavigationBar";
 
 function Landing() {
   const { scrollYProgress } = useScroll();
@@ -58,19 +58,11 @@ function Landing() {
         className="text-gray-100 bg-[#171717]"
         style={{ fontFamily: "Roboto" }}
       >
-        <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
-          <div className="flex justify-center">
-            <div className="lg:hidden py-4">
-              <img src={LogoIcon} alt="" className="w-20 lg:w-24" />
-            </div>
-          </div>
-
+        <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
+          <NavigationBar />
           <div className="lg:grid grid-cols-2 gap-10 lg:gap-0 items-center">
             <div className="px-4 flex flex-col gap-10">
               <div className="lg:px-4 md:px-8">
-                <div className="py-4 hidden lg:block">
-                  <img src={LogoIcon} alt="" className="w-20 lg:w-24 " />
-                </div>
                 <p className="lg:text-xl text-lg uppercase font-semibold mb-4 lg:mt-20 mt-8 text-center lg:text-left">
                   Elixir Kenya
                 </p>
