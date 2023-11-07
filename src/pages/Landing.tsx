@@ -320,9 +320,9 @@ function Landing() {
           </section>
 
           <section className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:pb-32">
-            <div className="bg-[#131313] p-6 lg:p-12 rounded-xl shadow-lg">
+            <div className="bg-[#1E1E1E] p-6 lg:p-12 rounded-xl shadow-lg">
               <p className="text-center pb-8 uppercase">Upcoming Event</p>
-              <div className="text-3xl lg:text-[5.2rem] leading-snug font-bold lg:font-black text-center">
+              <div className="text-3xl lg:text-[5.2rem] lg:leading-none  font-bold lg:font-black text-center">
                 🤯Get ready to put your coding hats at{" "}
                 <span className="text-purple-600 ">
                   ElixirConf Africa 2024 !
