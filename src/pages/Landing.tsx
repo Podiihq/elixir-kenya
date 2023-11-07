@@ -148,7 +148,7 @@ function Landing() {
                   <img src={AboutImage} alt="" />
                 </div>
                 <div id="about">
-                  <h1 className="text-2xl lg:text-[36px] font-extrabold text-white pb-8">
+                  <h1 className="text-2xl lg:text-[36px] font-extrabold text-white pb-4 lg:pb-8">
                     About Us
                   </h1>
                   <p className="mb-2 text-[#D9D9D9]">
@@ -299,9 +299,9 @@ function Landing() {
                       boxShadow: "0px 0px 8px rgba(255,255,255)",
                     }}
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfYdGiYQ5qHg4bIazOB0bSouFKvpxN5J3k6N7o1RpppmyiafA/viewform"
-                    className="lg:text-2xl py-3 px-6 border text-purple-800 bg-gray-100 font-semibold"
+                    className="lg:text-2xl py-3 px-6 text-gray-100 bg-purple-600 font-semibold"
                   >
-                    Become Speaker 🎙️
+                    Become Speaker
                   </motion.a>
                 </div>
               </div>

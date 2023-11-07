@@ -14,7 +14,7 @@ function Cards(props: CardProps) {
           className="w-full h-full object-cover p-4 rounded-xl"
         />
       </div>
-      <div className="px-6 lg:px-12 py-8 lg:py-20">
+      <div className="px-6 lg:px-12 pb-8 lg:py-20">
         <h3 className="text-2xl lg:text-[36px] font-semibold">
           {props.heading}
         </h3>

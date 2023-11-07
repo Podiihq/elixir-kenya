@@ -7,7 +7,7 @@ interface CardProps {
 function CardsAlternate(props: CardProps) {
   return (
     <div className="flex flex-col-reverse lg:grid grid-cols-2 items-center border border-[#3d3d3d] rounded-xl text-gray-100">
-      <div className="px-6 lg:px-12 py-8 lg:py-20">
+      <div className="px-6 lg:px-12 pb-8 lg:py-20">
         <h3 className="text-2xl lg:text-[36px] font-semibold">
           {props.heading}
         </h3>
