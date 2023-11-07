@@ -323,7 +323,7 @@ function Landing() {
             <div className="bg-[#1E1E1E] p-6 lg:p-12 rounded-xl shadow-lg">
               <p className="text-center pb-8 uppercase">Upcoming Event</p>
               <div className="text-3xl lg:text-6xl lg:leading-tight  font-bold lg:font-black text-center">
-                🤯Get ready to put<br></br> your coding hats at<br></br>
+                🎊Get ready to put<br></br> your coding hats at<br></br>
                 <span className="text-purple-600 ">
                   ElixirConf Africa 2024.
                 </span>
