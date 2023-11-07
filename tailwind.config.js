@@ -8,6 +8,9 @@ export default {
     extend: {
       fontSize: {
         xxl: '7.5rem'
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
       }
     },
   },

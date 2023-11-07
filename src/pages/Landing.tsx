@@ -135,7 +135,7 @@ function Landing() {
             <img
               src={ExploreImage}
               alt=""
-              className="w-full h-full hidden lg:block"
+              className="w-full h-full hidden lg:block animate-[spin_120s_linear_infinite]"
             />
           </div>
         </div>
