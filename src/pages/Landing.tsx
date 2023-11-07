@@ -364,7 +364,7 @@ function Landing() {
                 </h3>
                 <a
                   href="https://www.youtube.com/watch?v=EQ-ZRP5FKZ8&list=PLed5yhS5IfIBXD02laL3EidyebWWECxsi"
-                  className="underline text-lg text-[#79628C] font-semibold hover:text-white"
+                  className="underline text-lg text-purple-600 font-semibold hover:text-white"
                 >
                   Explore All Videos{" "}
                 </a>
