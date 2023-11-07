@@ -203,7 +203,7 @@ function Landing() {
                 "Our webinars feature a rich tapestry of speakers from various backgrounds, each sharing their invaluable insights and expertise. Catering to a diverse audience, ranging from novices to seasoned developers, these talks are thoughtfully designed to resonate with attendees of all levels. "
               }
             />
-            <div className="py-8"></div>
+            <div className="py-2 lg:py-8"></div>
             <CardsAlternate
               images={Hero3}
               heading={"Monday Meetups"}
@@ -214,7 +214,7 @@ function Landing() {
           </section>
 
           <div className="bg-[#1E1E1E]">
-            <section className="px-4 py-8 lg:py-24  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
+            <section className="px-4 py-16 lg:py-24  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
               <div className=" text-center">
                 <div className="">
                   <p className="text-5xl lg:text-6xl font-bold leading-none text-center">
@@ -223,7 +223,7 @@ function Landing() {
                     Connect
                   </p>
                   <div className="flex justify-center">
-                    <p className="py-4 lg:py-8 text-xl text-center w-1/2">
+                    <p className="py-4 lg:py-8 text-xl text-center lg:w-1/2">
                       Dive deep into the latest tools and techniques with
                       interactive, practical
                       <span className="uppercase font-semibold text-orange-500">
