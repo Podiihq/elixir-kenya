@@ -6,7 +6,7 @@ interface CardProps {
 
 function CardsAlternate(props: CardProps) {
   return (
-    <div className="flex flex-col-reverse lg:grid grid-cols-2 items-center bg-[#1E1E1E] rounded-xl text-gray-100">
+    <div className="flex flex-col-reverse lg:grid grid-cols-2 items-center border border-[#3d3d3d] rounded-xl text-gray-100">
       <div className="px-6 lg:px-12 py-8 lg:py-20">
         <h3 className="text-2xl lg:text-[36px] font-semibold">
           {props.heading}
@@ -14,7 +14,11 @@ function CardsAlternate(props: CardProps) {
         <p className="mt-4 lg:mt-8">{props.description}</p>
       </div>
       <div>
-        <img src={props.images} alt="" className="w-full h-full object-cover" />
+        <img
+          src={props.images}
+          alt=""
+          className="w-full h-full object-cover p-4 rounded-xl"
+        />
       </div>
     </div>
   );

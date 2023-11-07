@@ -1,7 +1,6 @@
 // import NavigationBar from "../components/NavigationBar";
-import MainHero from "../assets/images/new/Hero.png";
-import MobileHero from "../assets/images/new/HeroMobile2.svg";
 import AboutImage from "../assets/images/new/about.svg";
+import ExploreImage from "../assets/images/new/Explore.svg";
 import Gallary2 from "../assets/images/people5.png";
 import Hero2 from "../assets/images/people1.png";
 import Hero3 from "../assets/images/people2.png";
@@ -59,122 +58,45 @@ function Landing() {
         className="text-gray-100 bg-[#171717]"
         style={{ fontFamily: "Roboto" }}
       >
-        {/* <div className="">
-          <motion.img
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            src={MainHero}
-            alt=""
-            className="object-cover w-full  h-full absolute -z-10"
-          />
-        </div> */}
-        {/* <NavigationBar /> */}
-        {/* <div className="lg:grid grid-cols-2 flex flex-col-reverse">
-          <div className="xl:ml-56 ">
-            <div className="px-4 md:px-8">
-              <img src={LogoIcon} alt="" className="w-24 hidden lg:block" />
-              <p className="lg:text-xl text-lg uppercase font-semibold mb-4 lg:mt-20 text-center lg:text-left">
-                Elixir Kenya
-              </p>
-              <p className="text-4xl text-white font-extrabold xl:text-[68px] leading-none text-center lg:text-left">
-                Join our vibrant community to elevate your Elixir journey.
-              </p>
-              <p className="text-[#D9D9D9] mt-4 lg:mt-8 text-lg text-center lg:text-left">
-                Embark on a journey to amplify Elixir's impact in Kenya through
-                our thriving community.
-                <span className="hidden xl:block">
-                  Join us to elevate your skills and experiences, as we unite
-                  passionate Elixir enthusiasts, foster innovation, and drive
-                  the advancement of technology in the heart of Kenya.
-                </span>
-              </p>
-              <div className="my-4 lg:my-8">
-                <div className="lg:flex gap-10">
-                  <div className="flex justify-center mb-4">
-                    <motion.a
-                      whileHover={{
-                        scale: 1.1,
-                        boxShadow: "0px 0px 8px rgba(100,100,255)",
-                      }}
-                      href="https://t.me/elixirkenya"
-                      className="xl:text-xl py-3 px-6 bg-purple-600 text-white hover:bg-[#9d68c9] font-semibold"
-                    >
-                      {" "}
-                      Join Community
-                    </motion.a>
-                  </div>
-
-                  <div className="flex justify-center lg:justify-normal items-center mt-4 space-x-4 sm:mt-0 py-4 lg:py-0">
-                    <a
-                      href="https://www.youtube.com/@elixirkenya"
-                      className="text-gray-300 hover:text-gray-500"
-                    >
-                      <i className="fa fa-youtube text-2xl"></i>
-                    </a>
-                    <a
-                      href="https://twitter.com/ElixirKenya"
-                      className="text-gray-300 hover:text-gray-500"
-                    >
-                      <i className="fa fa-twitter text-2xl"></i>
-                    </a>
-                    <a
-                      href="https://t.me/elixirkenya"
-                      className="text-gray-300 hover:text-gray-500"
-                    >
-                      <i className="fa fa-telegram text-2xl"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/showcase/elixirkenya/"
-                      className="text-gray-300 hover:text-gray-500"
-                    >
-                      <i className="fa fa-linkedin text-2xl"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+        <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
+          <div className="flex justify-center">
+            <div className="lg:hidden py-4">
+              <img src={LogoIcon} alt="" className="w-20 lg:w-24" />
             </div>
           </div>
-          <div className="flex lg:block">
-            <img src={LogoIcon} alt="" className="w-20 h-16 lg:hidden m-4" />
-            <img src={MainHero} alt="" className="w-full hidden lg:block" />
-            <img
-              src={MobileHero}
-              alt=""
-              className="w-full overflow-hidden lg:hidden"
-            />
-          </div>
-        </div> */}
 
-        <div className="lg:grid grid-cols-2 gap-10 lg:gap-0">
-          <div className="ml-4 xl:ml-48">
+          <div className="lg:grid grid-cols-2 gap-10 lg:gap-0 items-center">
             <div className="px-4 flex flex-col gap-10">
               <div className="lg:px-4 md:px-8">
-                <div className="lg:block py-4">
-                  <img src={LogoIcon} alt="" className="w-20 lg:w-24" />
+                <div className="py-4 hidden lg:block">
+                  <img src={LogoIcon} alt="" className="w-20 lg:w-24 " />
                 </div>
-                {/* <div>
-                  <img src={MobileHero} alt="" className=" w-full h-full" />
-                </div> */}
-                <p className="lg:text-xl text-lg uppercase font-semibold mb-4 lg:mt-20 mt-8">
+                <p className="lg:text-xl text-lg uppercase font-semibold mb-4 lg:mt-20 mt-8 text-center lg:text-left">
                   Elixir Kenya
                 </p>
-                <p className="text-4xl text-white font-extrabold xl:text-[68px] xl:leading-none ">
+                <p className="text-4xl text-white font-extrabold xl:text-[68px] xl:leading-none text-center lg:text-left">
                   Join our vibrant community to elevate your Elixir journey.
                 </p>
-                <p className="text-[#D9D9D9] mt-4 lg:mt-8 text-lg pb-4">
+                <p className="text-[#D9D9D9] mt-4 lg:mt-8 text-lg pb-4 text-center lg:text-left">
                   Embark on a journey to amplify Elixir's impact in Kenya
                   through our thriving community.
-                  <span className="">
+                  <span className="hidden lg:block">
                     Join us to elevate your skills and experiences, as we unite
                     passionate Elixir enthusiasts, foster innovation, and drive
                     the advancement of technology in the heart of Kenya.
                   </span>
                 </p>
+                <div className="flex justify-center lg:hidden">
+                  <img
+                    src={ExploreImage}
+                    alt=""
+                    className="w-2/3 lg:w-full lg:h-full"
+                  />
+                </div>
 
                 <div className="my-4 pb-16 lg:pb-0 lg:my-8">
                   <div className="lg:flex gap-10">
-                    <div className="mb-4">
+                    <div className="mb-4 flex justify-center">
                       <motion.a
                         whileHover={{
                           scale: 1.1,
@@ -188,7 +110,7 @@ function Landing() {
                       </motion.a>
                     </div>
 
-                    <div className=" lg:justify-normal items-center mt-4 space-x-4 sm:mt-0 py-4 lg:py-0">
+                    <div className="flex justify-center lg:justify-normal items-center mt-4 space-x-4 sm:mt-0 py-4 lg:py-0">
                       <a
                         href="https://www.youtube.com/@elixirkenya"
                         className="text-gray-300 hover:text-gray-500"
@@ -218,12 +140,12 @@ function Landing() {
                 </div>
               </div>
             </div>
+            <img
+              src={ExploreImage}
+              alt=""
+              className="w-full h-full hidden lg:block"
+            />
           </div>
-          <img
-            src={MainHero}
-            alt=""
-            className="w-auto lg:w-full xl:h-full ml-4 lg:ml-0 overflow-hidden hidden lg:block"
-          />
         </div>
 
         <div className="bg-[#171717] ">
@@ -291,58 +213,56 @@ function Landing() {
             />
           </section>
 
-          {/* <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
-            <div className="grid lg:grid-cols-2 gap-4 lg:gap-24 items-center">
-              <div>
-                <p className="text-5xl lg:text-[36px] font-extrabold leading-none text-center lg:text-left">
-                  Explore,<br></br>
-                  <span className="text-purple-800">Create & </span> <br></br>
-                  Connect
-                </p>
-                <p className="py-4 lg:py-8 text-xl text-center lg:text-left">
-                  Dive deep into the latest tools and techniques with
-                  interactive, practical
-                  <span className="uppercase font-semibold text-orange-500">
-                    {" "}
-                    workshops
-                  </span>
-                  , connecting with fellow
-                  <span className="uppercase font-semibold text-yellow-500">
-                    {" "}
-                    elixir developers
-                  </span>
-                  , potential collaborators, and
-                  <span className="uppercase font-semibold text-green-500">
-                    {" "}
-                    mentors
-                  </span>{" "}
-                  who can shape your career.
-                </p>
-                <div className="mt-4 flex justify-center lg:block">
-                  <motion.a
-                    whileHover={{
-                      scale: 1.1,
-                      boxShadow: "0px 0px 8px rgba(255,255,255)",
-                    }}
-                    href="https://t.me/elixirkenya"
-                    className="lg:text-2xl py-3 px-6 border text-white bg-gradient-to-r from-[#492e5f] to-[#131313]"
-                  >
-                    Our Community 😃
-                  </motion.a>
+          <div className="bg-[#1E1E1E]">
+            <section className="px-4 py-8 lg:py-24  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
+              <div className=" text-center">
+                <div className="">
+                  <p className="text-5xl lg:text-6xl font-bold leading-none text-center">
+                    Explore, <span className="text-purple-800">Create & </span>{" "}
+                    <br></br>
+                    Connect
+                  </p>
+                  <div className="flex justify-center">
+                    <p className="py-4 lg:py-8 text-xl text-center w-1/2">
+                      Dive deep into the latest tools and techniques with
+                      interactive, practical
+                      <span className="uppercase font-semibold text-orange-500">
+                        {" "}
+                        workshops
+                      </span>
+                      , connecting with fellow
+                      <span className="uppercase font-semibold text-yellow-500">
+                        {" "}
+                        elixir developers
+                      </span>
+                      , potential collaborators, and
+                      <span className="uppercase font-semibold text-green-500">
+                        {" "}
+                        mentors
+                      </span>{" "}
+                      who can shape your career.
+                    </p>
+                  </div>
+
+                  <div className="mt-4 flex justify-center lg:block">
+                    <motion.a
+                      whileHover={{
+                        scale: 1.1,
+                        boxShadow: "0px 0px 8px rgba(255,255,255)",
+                      }}
+                      href="https://t.me/elixirkenya"
+                      className="lg:text-2xl py-3 px-6 border text-white bg-gradient-to-r from-[#492e5f] to-[#131313]"
+                    >
+                      Our Community 😃
+                    </motion.a>
+                  </div>
                 </div>
               </div>
-              <div className="mt-4">
-                <img
-                  src="https://images.unsplash.com/photo-1574786199573-a22c93a95aaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2077&q=80"
-                  alt=""
-                  className="rounded-xl border-gray-100 border-2 hidden lg:block"
-                />
-              </div>
-            </div>
-          </section> */}
+            </section>
+          </div>
 
           <section id="speakers">
-            <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:pb-32">
+            <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:pb-32 lg:pt-16">
               <div>
                 <div>
                   <p className="text-5xl lg:text-6xl font-bold lg:w-1/2">
