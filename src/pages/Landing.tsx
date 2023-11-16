@@ -345,7 +345,7 @@ function Landing() {
 
             <div className="text-center bg-purple-600 py-2 lg:py-4 rounded-b-xl">
               <Marquee className="overflow-hidden">
-                <p className="text-2xl lg:text-4xl font-semibold uppercase">
+                <p className="text-2xl lg:text-4xl font-medium uppercase">
                   {" - "}
                   Elixir Safari 2024 - Elixir Safari 2024 - Elixir Safari 2024 -
                   Elixir Safari 2024 - Elixir Safari 2024 - Elixir Safari 2024 -
