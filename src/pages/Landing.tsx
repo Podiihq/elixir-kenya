@@ -347,9 +347,9 @@ function Landing() {
               <Marquee className="overflow-hidden">
                 <p className="text-2xl lg:text-4xl">
                   {" - "}
-                  ElixirConf Africa 2024 - ElixirConf Africa 2024 - ElixirConf
-                  Africa 2024 - ElixirConf Africa 2024 - ElixirConf Africa 2024
-                  - ElixirConf Africa 2024
+                  Elixir Safari 2024 - Elixir Safari 2024 - Elixir Safari 2024 -
+                  Elixir Safari 2024 - Elixir Safari 2024 - Elixir Safari 2024 -
+                  Elixir Safari 2024 - Elixir Safari 2024
                 </p>
               </Marquee>
             </div>
