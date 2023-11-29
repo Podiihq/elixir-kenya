@@ -149,7 +149,7 @@ function Landing() {
                 </div>
                 <div id="about">
                   <h1 className="text-2xl lg:text-[36px] font-extrabold text-white pb-4 lg:pb-8">
-                    About Us
+                    About Us.
                   </h1>
                   <p className="mb-2 text-[#D9D9D9]">
                     Welcome to Elixir Kenya, your hub for all things Elixir
@@ -186,7 +186,7 @@ function Landing() {
               className="text-5xl lg:text-6xl font-bold  pb-8 lg:mb-8"
               id="webinars"
             >
-              Our <span className="text-purple-600">Webinars</span>
+              Our <span className="text-purple-600">Webinars.</span>
             </h1>
             <Cards
               images={Hero2}
