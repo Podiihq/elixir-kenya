@@ -397,7 +397,13 @@ function Landing() {
                 <h3 className="text-5xl lg:text-6xl font-bold mb-4 lg:mb-0">
                   Supporters & Enablers
                 </h3>
-                <img src={PodiiLogo} alt="" className="lg:mt-8 mt-8 lg:w-1/6" />
+                <a href="https://podiihq.com/">
+                  <img
+                    src={PodiiLogo}
+                    alt=""
+                    className="lg:mt-8 mt-8 lg:w-1/6"
+                  />
+                </a>
               </div>
             </div>
           </section>
